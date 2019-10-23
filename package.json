@@ -1,0 +1,19 @@
+{
+  "name": "vue-cli-plugin-autocreate",
+  "version": "1.0.0",
+  "description": "自动创建.vueb模板和api模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teojs/-vue-cli-plugin-autocreate.git"
+  },
+  "author": "Teo <cheesen.xu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teojs/-vue-cli-plugin-autocreate/issues"
+  },
+  "homepage": "https://github.com/teojs/-vue-cli-plugin-autocreate#readme"
+}
