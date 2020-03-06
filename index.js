@@ -25,7 +25,7 @@ module.exports = () => {
                 this.$http({
                   method: 'post',
                   url: '/api',
-                  // params: ctx.data,
+                  // params: ctx.params,
                   data: ctx.data,
                 }).then(e => {
                   if (e.code === '01') {
