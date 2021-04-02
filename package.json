@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-autocreate",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "自动创建.vue模板和api模板",
   "main": "index.js",
   "scripts": {
