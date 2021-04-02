@@ -19,6 +19,7 @@ module.exports = () => {
             })
             const template = `
               /**
+               * this.$api.${filename.split('\\').join('.').replace('.js', '')}
                * 接口说明...
                */
               export default function(ctx) {
@@ -27,6 +28,7 @@ module.exports = () => {
                   url: '/api',
                   // params: ctx.params,
                   data: ctx.data,
+                  // loading: ctx.loading,
                 }).then(e => {
                   if (e.code === '01') {
                     return ctx.success(e.body)
@@ -68,7 +70,10 @@ module.exports = () => {
               path.join(viewsPath, filename),
               template.replace(
                 /component name here/g,
-                filename.replace('.vue', '').replace(/\\|\//g, '-')
+                filename.replace('.vue', '').replace(/\\|\//g, '')
+              ).replace(
+                /path here/g,
+                '/' + filename.replace('.vue', '').replace(/\\|\//g, '/').toLowerCase()
               )
             )
           }

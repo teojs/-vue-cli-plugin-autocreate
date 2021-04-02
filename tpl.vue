@@ -6,17 +6,16 @@
 export default {
   name: 'component name here',
   route: {
-    path: '',
+    path: 'path here',
     name: 'component name here',
-    parent: 'home', // TODO：如果不是子路由，清删掉这条
+    parent: 'home',
     meta: { title: '新页面' },
-    async: false,
+    sort: 1,
   },
   components: {},
   data() {
     return {}
   },
-  // TODO：多余的钩子记得删掉(包括我这句！)
   beforeCreate() {},
   created() {},
   beforeMount() {},
